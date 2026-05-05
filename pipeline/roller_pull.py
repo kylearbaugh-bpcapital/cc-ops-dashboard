@@ -489,7 +489,13 @@ def main() -> int:
     except ValueError:
         meta_display = str(meta_path)
     print(f"Wrote summary to {meta_display}")
-    return 0 if overall_ok else 1
+    # Always return 0. Pagination caps + transient page errors are warnings;
+    # the data we have is better than no data, and downstream build_summary.py
+    # is tolerant of missing fields. Fatal errors (auth fail, no token,
+    # connection refused) already sys.exit() above before reaching here.
+    if not overall_ok:
+        print("(non-fatal warnings reported above — exiting 0 so the workflow continues)")
+    return 0
 
 
 if __name__ == "__main__":
