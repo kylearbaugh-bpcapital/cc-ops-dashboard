@@ -422,6 +422,10 @@ def main() -> int:
             out_path.write_text(json.dumps(result["records"], indent=2, default=str))
             stored = result["record_count"]
             extra = ""
+        try:
+            file_display = str(out_path.relative_to(ROOT))
+        except ValueError:
+            file_display = str(out_path)
         summary["resources"][cache_key] = {
             "path": path, "type": kind, "days_back": days_back,
             "merge_key": merge_key,
@@ -429,7 +433,7 @@ def main() -> int:
             "stored_count": stored,
             "pages_pulled": result["pages_pulled"],
             "errors": result["errors"][:3],
-            "file": str(out_path.relative_to(ROOT)),
+            "file": file_display,
         }
         msg = f"  ✓ fetched {result['record_count']} records, {result['pages_pulled']} pages{extra}"
         if result["errors"]:
@@ -460,12 +464,16 @@ def main() -> int:
         result = pull_reference_resource(env, token, path)
         out_path = CACHE_DIR / f"{cache_key}.json"
         out_path.write_text(json.dumps(result["records"], indent=2, default=str))
+        try:
+            file_display = str(out_path.relative_to(ROOT))
+        except ValueError:
+            file_display = str(out_path)
         summary["resources"][cache_key] = {
             "path": path, "type": "reference",
             "record_count": result["record_count"],
             "pages_pulled": result["pages_pulled"],
             "errors": result["errors"][:3],
-            "file": str(out_path.relative_to(ROOT)),
+            "file": file_display,
         }
         msg = f"  ✓ {result['record_count']} records, {result['pages_pulled']} pages"
         if result["errors"]:
@@ -476,7 +484,11 @@ def main() -> int:
     summary["pending_resources"] = [{"path": p, "reason": r} for p, r in PENDING_RESOURCES]
     meta_path.write_text(json.dumps(summary, indent=2))
     print()
-    print(f"Wrote summary to {meta_path.relative_to(ROOT)}")
+    try:
+        meta_display = str(meta_path.relative_to(ROOT))
+    except ValueError:
+        meta_display = str(meta_path)
+    print(f"Wrote summary to {meta_display}")
     return 0 if overall_ok else 1
 
 
