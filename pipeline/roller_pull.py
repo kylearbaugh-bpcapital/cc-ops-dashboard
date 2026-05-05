@@ -163,17 +163,16 @@ def get_token(env: dict[str, str], force_refresh: bool = False) -> str:
             pass
 
     auth_url = env["ROLLER_API_BASE"].rstrip("/") + "/token"
-    form_body = urllib.parse.urlencode({
-        "grant_type": "client_credentials",
+    json_body = json.dumps({
         "client_id":     env["ROLLER_CLIENT_ID"],
         "client_secret": env["ROLLER_CLIENT_SECRET"],
     }).encode("utf-8")
     req = urllib.request.Request(
         auth_url,
-        data=form_body,
+        data=json_body,
         method="POST",
         headers={
-            "Content-Type": "application/x-www-form-urlencoded",
+            "Content-Type": "application/json",
             "Accept": "application/json",
         },
     )
