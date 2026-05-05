@@ -1,0 +1,65 @@
+name: Refresh dashboard data
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6h: 00, 06, 12, 18 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      # Secrets — set in repo Settings → Secrets and variables → Actions
+      ROLLER_CLIENT_ID:     ${{ secrets.ROLLER_CLIENT_ID }}
+      ROLLER_CLIENT_SECRET: ${{ secrets.ROLLER_CLIENT_SECRET }}
+      ROLLER_API_BASE:      ${{ secrets.ROLLER_API_BASE }}
+      # Cache + output paths consumed by both pipeline scripts
+      ROLLER_CACHE_DIR: /tmp/roller_cache
+      SUMMARY_OUT:      data/summary.json
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # actions/cache restores from the most recent prefix match (restore-keys)
+      # and saves a brand-new cache keyed on this run id at job end. Net effect:
+      # the OAuth token + accumulated intermediate JSONs persist across runs,
+      # but the cache rolls forward and aged entries get LRU-evicted by GitHub.
+      - name: Restore Roller cache (token + intermediate JSONs)
+        uses: actions/cache@v4
+        with:
+          path: /tmp/roller_cache
+          key: roller-cache-${{ github.repository_id }}-${{ github.run_id }}
+          restore-keys: |
+            roller-cache-${{ github.repository_id }}-
+
+      - name: Pull Roller data
+        run: python pipeline/roller_pull.py
+
+      - name: Build summary.json
+        run: python pipeline/build_summary.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/summary.json
+          if git diff --cached --quiet; then
+            echo "summary.json unchanged — nothing to commit"
+          else
+            git commit -m "data: refresh summary.json ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git push
+          fi
