@@ -26,6 +26,7 @@ import os
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -93,8 +94,9 @@ PENDING_RESOURCES = [
 def load_env() -> dict[str, str]:
     """Read Roller credentials. Prefer process environment (CI use case),
     fall back to config/roller.env (local dev). Returns dict containing the
-    three required keys: ROLLER_CLIENT_ID, ROLLER_CLIENT_SECRET, ROLLER_API_BASE."""
-    required = ("ROLLER_CLIENT_ID", "ROLLER_CLIENT_SECRET", "ROLLER_API_BASE")
+    four required keys: ROLLER_CLIENT_ID, ROLLER_CLIENT_SECRET,
+    ROLLER_AUTH_URL (OAuth token endpoint), ROLLER_API_BASE (data API root)."""
+    required = ("ROLLER_CLIENT_ID", "ROLLER_CLIENT_SECRET", "ROLLER_AUTH_URL", "ROLLER_API_BASE")
     env: dict[str, str] = {}
     # 1) Process env wins (CI)
     for k in required:
@@ -145,7 +147,11 @@ def http(method: str, url: str, body: dict | None = None, headers: dict | None =
 
 
 def get_token(env: dict[str, str], force_refresh: bool = False) -> str:
-    """Use cached token if it has > 60 seconds of life, otherwise refresh."""
+    """Use cached token if it has > 60 seconds of life, otherwise refresh.
+
+    Roller uses standard OAuth 2.0 client_credentials flow against
+    ROLLER_AUTH_URL (e.g. https://api-auth.roller.app/connect/token).
+    Body must be application/x-www-form-urlencoded, not JSON."""
     if not force_refresh and TOKEN_CACHE.exists():
         try:
             cache = json.loads(TOKEN_CACHE.read_text())
@@ -154,16 +160,30 @@ def get_token(env: dict[str, str], force_refresh: bool = False) -> str:
         except (json.JSONDecodeError, OSError):
             pass
 
-    base = env["ROLLER_API_BASE"].rstrip("/")
-    status, body = http(
-        "POST",
-        f"{base}/token",
-        body={
-            "client_id": env["ROLLER_CLIENT_ID"],
-            "client_secret": env["ROLLER_CLIENT_SECRET"],
+    auth_url = env["ROLLER_AUTH_URL"]
+    form_body = urllib.parse.urlencode({
+        "grant_type": "client_credentials",
+        "client_id":     env["ROLLER_CLIENT_ID"],
+        "client_secret": env["ROLLER_CLIENT_SECRET"],
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        auth_url,
+        data=form_body,
+        method="POST",
+        headers={
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Accept": "application/json",
         },
     )
-    if status != 200 or not isinstance(body, dict) or "access_token" not in body:
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            status = resp.status
+            body = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        body_text = e.read().decode("utf-8", errors="replace")
+        sys.exit(f"Auth failed ({e.code}): {body_text}")
+
+    if status != 200 or "access_token" not in body:
         sys.exit(f"Auth failed ({status}): {body}")
 
     expires_in = int(body.get("expires_in", 86400))
