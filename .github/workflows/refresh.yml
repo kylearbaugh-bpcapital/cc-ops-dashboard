@@ -20,7 +20,6 @@ jobs:
       # Secrets — set in repo Settings → Secrets and variables → Actions
       ROLLER_CLIENT_ID:     ${{ secrets.ROLLER_CLIENT_ID }}
       ROLLER_CLIENT_SECRET: ${{ secrets.ROLLER_CLIENT_SECRET }}
-      ROLLER_AUTH_URL:      ${{ secrets.ROLLER_AUTH_URL }}
       ROLLER_API_BASE:      ${{ secrets.ROLLER_API_BASE }}
       # Cache + output paths consumed by both pipeline scripts
       ROLLER_CACHE_DIR: /tmp/roller_cache
