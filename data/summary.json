@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T14:40:55.024546+00:00",
+  "generated_at": "2026-08-03T19:36:35.421034+00:00",
   "today": "2026-08-03",
   "month_start": "2026-08-01",
   "days_in_month": 31,
@@ -1034,9 +1034,171 @@
   },
   "today_preview": {
     "date": "2026-08-03",
-    "revenue": 265.65,
-    "booking_count": 12,
+    "revenue": 406.18,
+    "booking_count": 22,
     "transactions": [
+      {
+        "paymentId": "166180220",
+        "ref": "157289791",
+        "amount": 0.0,
+        "method": "Cash",
+        "method_variant": null,
+        "tip": 0.0,
+        "createdAt": "2026-08-03T18:34:20Z",
+        "createdTime": "18:34",
+        "name": "Haylee Jones",
+        "categories": [
+          "Admission"
+        ],
+        "booking_date": "2026-08-03",
+        "card_last4": ""
+      },
+      {
+        "paymentId": "166179566",
+        "ref": "157289146",
+        "amount": 0.0,
+        "method": "Cash",
+        "method_variant": null,
+        "tip": 0.0,
+        "createdAt": "2026-08-03T18:31:39Z",
+        "createdTime": "18:31",
+        "name": "Sarah Day",
+        "categories": [
+          "Admission"
+        ],
+        "booking_date": "2026-08-03",
+        "card_last4": ""
+      },
+      {
+        "paymentId": "166154639",
+        "ref": "157264920",
+        "amount": 35.0,
+        "method": "Cards",
+        "method_variant": "Visa",
+        "tip": 0.0,
+        "createdAt": "2026-08-03T16:52:37Z",
+        "createdTime": "16:52",
+        "name": "Teresa Shiverdecker",
+        "categories": [
+          "Merchandise"
+        ],
+        "booking_date": "2026-08-03",
+        "card_last4": "2129"
+      },
+      {
+        "paymentId": "166148122",
+        "ref": "157258574",
+        "amount": 22.76,
+        "method": "Cards",
+        "method_variant": "Visa",
+        "tip": 0.0,
+        "createdAt": "2026-08-03T16:22:14Z",
+        "createdTime": "16:22",
+        "name": "Klariza Dodson",
+        "categories": [
+          "Admission",
+          "Merchandise"
+        ],
+        "booking_date": "2026-08-03",
+        "card_last4": "5615"
+      },
+      {
+        "paymentId": "166145699",
+        "ref": "157256227",
+        "amount": 39.1,
+        "method": "Cards",
+        "method_variant": "Visa",
+        "tip": 0.0,
+        "createdAt": "2026-08-03T16:10:31Z",
+        "createdTime": "16:10",
+        "name": "Dustin Clements",
+        "categories": [
+          "Admission",
+          "Merchandise"
+        ],
+        "booking_date": "2026-08-03",
+        "card_last4": "6837"
+      },
+      {
+        "paymentId": "166143761",
+        "ref": "157254327",
+        "amount": 0.0,
+        "method": "Cash",
+        "method_variant": null,
+        "tip": 0.0,
+        "createdAt": "2026-08-03T16:01:05Z",
+        "createdTime": "16:01",
+        "name": "Richard Boggs",
+        "categories": [
+          "Admission"
+        ],
+        "booking_date": "2026-08-03",
+        "card_last4": ""
+      },
+      {
+        "paymentId": "166139089",
+        "ref": "157249781",
+        "amount": 3.21,
+        "method": "Cards",
+        "method_variant": "Visa",
+        "tip": 0.0,
+        "createdAt": "2026-08-03T15:34:34Z",
+        "createdTime": "15:34",
+        "name": "Jordan Blake",
+        "categories": [
+          "Merchandise"
+        ],
+        "booking_date": "2026-08-03",
+        "card_last4": "0310"
+      },
+      {
+        "paymentId": "166133538",
+        "ref": "157244366",
+        "amount": 10.5,
+        "method": "Cards",
+        "method_variant": "Visa",
+        "tip": 0.0,
+        "createdAt": "2026-08-03T15:01:18Z",
+        "createdTime": "15:01",
+        "name": "Sha'Cora Holton",
+        "categories": [
+          "Merchandise"
+        ],
+        "booking_date": "2026-08-03",
+        "card_last4": "4170"
+      },
+      {
+        "paymentId": "166133125",
+        "ref": "157243956",
+        "amount": 19.26,
+        "method": "Cards",
+        "method_variant": "Visa",
+        "tip": 0.0,
+        "createdAt": "2026-08-03T14:58:15Z",
+        "createdTime": "14:58",
+        "name": "Jordan Blake",
+        "categories": [
+          "Admission"
+        ],
+        "booking_date": "2026-08-03",
+        "card_last4": "0310"
+      },
+      {
+        "paymentId": "166131096",
+        "ref": "157241930",
+        "amount": 10.7,
+        "method": "Cards",
+        "method_variant": "Visa",
+        "tip": 0.0,
+        "createdAt": "2026-08-03T14:40:27Z",
+        "createdTime": "14:40",
+        "name": "Breezy Warner",
+        "categories": [
+          "Admission"
+        ],
+        "booking_date": "2026-08-03",
+        "card_last4": "1973"
+      },
       {
         "paymentId": "166127480",
         "ref": "157238415",
@@ -1265,6 +1427,35 @@
         "lines": 3
       },
       {
+        "ref": "157256227",
+        "name": "Dustin Clements",
+        "total": 39.1,
+        "status": "Paid",
+        "date": "2026-08-03",
+        "categories": [
+          "Admission",
+          "Merchandise"
+        ],
+        "location": "Doorlist",
+        "groupSize": 2,
+        "discount": 0.0,
+        "lines": 3
+      },
+      {
+        "ref": "157264920",
+        "name": "Teresa Shiverdecker",
+        "total": 35.0,
+        "status": "Paid",
+        "date": "2026-08-03",
+        "categories": [
+          "Merchandise"
+        ],
+        "location": "Doorlist",
+        "groupSize": 1,
+        "discount": 0.0,
+        "lines": 1
+      },
+      {
         "ref": "157237026",
         "name": "Breezy Warner",
         "total": 22.76,
@@ -1280,6 +1471,21 @@
         "lines": 2
       },
       {
+        "ref": "157258574",
+        "name": "Klariza Dodson",
+        "total": 22.76,
+        "status": "Paid",
+        "date": "2026-08-03",
+        "categories": [
+          "Admission",
+          "Merchandise"
+        ],
+        "location": "Doorlist",
+        "groupSize": 2,
+        "discount": 0.0,
+        "lines": 3
+      },
+      {
         "ref": "157235810",
         "name": "Marissa Dittoe",
         "total": 19.26,
@@ -1292,6 +1498,62 @@
         "groupSize": 2,
         "discount": 18.0,
         "lines": 2
+      },
+      {
+        "ref": "157243956",
+        "name": "Jordan Blake",
+        "total": 19.26,
+        "status": "Paid",
+        "date": "2026-08-03",
+        "categories": [
+          "Admission"
+        ],
+        "location": "Doorlist",
+        "groupSize": 2,
+        "discount": 0.0,
+        "lines": 1
+      },
+      {
+        "ref": "157241930",
+        "name": "Breezy Warner",
+        "total": 10.7,
+        "status": "Paid",
+        "date": "2026-08-03",
+        "categories": [
+          "Admission"
+        ],
+        "location": "Doorlist",
+        "groupSize": 1,
+        "discount": 0.0,
+        "lines": 1
+      },
+      {
+        "ref": "157244366",
+        "name": "Sha'Cora Holton",
+        "total": 10.5,
+        "status": "Paid",
+        "date": "2026-08-03",
+        "categories": [
+          "Merchandise"
+        ],
+        "location": "Doorlist",
+        "groupSize": 1,
+        "discount": 0.0,
+        "lines": 1
+      },
+      {
+        "ref": "157249781",
+        "name": "Jordan Blake",
+        "total": 3.21,
+        "status": "Paid",
+        "date": "2026-08-03",
+        "categories": [
+          "Merchandise"
+        ],
+        "location": "Doorlist",
+        "groupSize": 1,
+        "discount": 0.0,
+        "lines": 1
       },
       {
         "ref": "157237161",
@@ -1320,16 +1582,58 @@
         "groupSize": 2,
         "discount": 18.0,
         "lines": 2
+      },
+      {
+        "ref": "157254327",
+        "name": "Richard Boggs",
+        "total": 0.0,
+        "status": "Paid",
+        "date": "2026-08-03",
+        "categories": [
+          "Admission"
+        ],
+        "location": "Doorlist",
+        "groupSize": 2,
+        "discount": 18.0,
+        "lines": 1
+      },
+      {
+        "ref": "157289146",
+        "name": "Sarah Day",
+        "total": 0.0,
+        "status": "Paid",
+        "date": "2026-08-03",
+        "categories": [
+          "Admission"
+        ],
+        "location": "Doorlist",
+        "groupSize": 2,
+        "discount": 18.0,
+        "lines": 1
+      },
+      {
+        "ref": "157289791",
+        "name": "Haylee Jones",
+        "total": 0.0,
+        "status": "Paid",
+        "date": "2026-08-03",
+        "categories": [
+          "Admission"
+        ],
+        "location": "Doorlist",
+        "groupSize": 2,
+        "discount": 18.0,
+        "lines": 2
       }
     ]
   },
   "mtd": {
     "month": "August 2026",
     "month_short": "2026-08",
-    "revenue": 2698.31,
+    "revenue": 2838.84,
     "by_category": {
-      "Admission": 1466.22,
-      "Merchandise": 672.12,
+      "Admission": 1537.42,
+      "Merchandise": 741.46,
       "Party Packages": 159.63,
       "Giftcards": 30.0,
       "Memberships": 26.75
@@ -1347,12 +1651,12 @@
       },
       {
         "date": "2026-08-03",
-        "revenue": 265.65,
-        "txns": 12
+        "revenue": 406.18,
+        "txns": 22
       }
     ],
-    "projected_full_month_naive_pace": 27882.54,
-    "projected_full_month_blended": 25018.99,
+    "projected_full_month_naive_pace": 29334.68,
+    "projected_full_month_blended": 25159.52,
     "historical_3mo_avg_roller": 24712.18,
     "days_elapsed": 3,
     "days_in_month": 31
@@ -1577,235 +1881,27 @@
     "total_membership_bookings_seen": 387,
     "tickets_membership_count_legacy": 395,
     "mrr_estimate_lifetime_value": 40663.61,
-    "visits_30d_total": 128,
+    "visits_30d_total": 129,
     "visits_60d_total": 169,
     "avg_visits_per_member_30d": 0.51,
-    "at_risk_count_30d": 124,
+    "at_risk_count_30d": 123,
     "at_risk_count_60d": 83,
     "at_risk_list": [
       {
-        "ref": "126333320",
-        "name": "Jenny Miller",
+        "ref": "123095411",
+        "name": "Khuloud Alissa",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 294.25,
+        "since": "2025-09-19"
+      },
+      {
+        "ref": "130529343",
+        "name": "Josh Narem",
         "visits_30d": 0,
         "visits_60d": 0,
         "membership_value": 171.2,
-        "since": "2025-10-30"
-      },
-      {
-        "ref": "143821881",
-        "name": "Virginia Reutzel",
-        "visits_30d": 0,
-        "visits_60d": 1,
-        "membership_value": 107.0,
-        "since": "2026-04-14"
-      },
-      {
-        "ref": "124538774",
-        "name": "Hirsh Shah",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 171.2,
-        "since": "2025-10-06"
-      },
-      {
-        "ref": "134710900",
-        "name": "Rachel Amerine",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 239.68,
-        "since": "2026-01-24"
-      },
-      {
-        "ref": "125715349",
-        "name": "Jessica Basic",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 171.2,
-        "since": "2025-10-20"
-      },
-      {
-        "ref": "141957555",
-        "name": "Misty Bonilla",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 221.0,
-        "since": "2026-03-29"
-      },
-      {
-        "ref": "145785836",
-        "name": "Franny Ross",
-        "visits_30d": 0,
-        "visits_60d": 1,
-        "membership_value": 53.5,
-        "since": "2026-05-05"
-      },
-      {
-        "ref": "145792442",
-        "name": "Victoria Price",
-        "visits_30d": 0,
-        "visits_60d": 1,
-        "membership_value": 80.25,
-        "since": "2026-05-05"
-      },
-      {
-        "ref": "152543225",
-        "name": "Madison Perry",
-        "visits_30d": 0,
-        "visits_60d": 1,
-        "membership_value": 53.5,
-        "since": "2026-07-03"
-      },
-      {
-        "ref": "136902206",
-        "name": "Kirsten Kusumi",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 133.75,
-        "since": "2026-02-15"
-      },
-      {
-        "ref": "135662583",
-        "name": "Jill Abraham",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 161.96,
-        "since": "2026-02-02"
-      },
-      {
-        "ref": "123710706",
-        "name": "Lauren Hutchinson",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 188.32,
-        "since": "2025-09-26"
-      },
-      {
-        "ref": "127977083",
-        "name": "Marisa Veseli",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 308.16,
-        "since": "2025-11-18"
-      },
-      {
-        "ref": "126294373",
-        "name": "Melinda Marksz",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 274.5,
-        "since": "2025-10-29"
-      },
-      {
-        "ref": "136346990",
-        "name": "Lindsay Weiser",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 160.5,
-        "since": "2026-02-10"
-      },
-      {
-        "ref": "146456658",
-        "name": "Sarah Elmahdy",
-        "visits_30d": 0,
-        "visits_60d": 1,
-        "membership_value": 53.5,
-        "since": "2026-05-14"
-      },
-      {
-        "ref": "123677351",
-        "name": "Haley Quinn",
-        "visits_30d": 0,
-        "visits_60d": 1,
-        "membership_value": 188.32,
-        "since": "2025-09-25"
-      },
-      {
-        "ref": "136629074",
-        "name": "Saleh Alfawzan",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 164.0,
-        "since": "2026-02-14"
-      },
-      {
-        "ref": "134534854",
-        "name": "Richard Boggs",
-        "visits_30d": 0,
-        "visits_60d": 1,
-        "membership_value": 149.8,
-        "since": "2026-01-21"
-      },
-      {
-        "ref": "133829878",
-        "name": "Jennifer Johnston",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 128.4,
-        "since": "2026-01-16"
-      },
-      {
-        "ref": "141975169",
-        "name": "Shanna A Brokaw",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 85.6,
-        "since": "2026-03-29"
-      },
-      {
-        "ref": "124165982",
-        "name": "Elise Alabbas",
-        "visits_30d": 0,
-        "visits_60d": 1,
-        "membership_value": 188.32,
-        "since": "2025-10-02"
-      },
-      {
-        "ref": "142020899",
-        "name": "Casey Harless",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 107.0,
-        "since": "2026-03-29"
-      },
-      {
-        "ref": "126868679",
-        "name": "Jessica Madden",
-        "visits_30d": 0,
-        "visits_60d": 1,
-        "membership_value": 192.6,
-        "since": "2025-11-07"
-      },
-      {
-        "ref": "124051725",
-        "name": "Amy Lang",
-        "visits_30d": 0,
-        "visits_60d": 1,
-        "membership_value": 321.25,
-        "since": "2025-09-29"
-      },
-      {
-        "ref": "134620835",
-        "name": "Sarah Audi",
-        "visits_30d": 0,
-        "visits_60d": 1,
-        "membership_value": 149.8,
-        "since": "2026-01-23"
-      },
-      {
-        "ref": "131525519",
-        "name": "Will Shary",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 108.36,
-        "since": "2025-12-28"
-      },
-      {
-        "ref": "130338508",
-        "name": "Kristen Sundling",
-        "visits_30d": 0,
-        "visits_60d": 0,
-        "membership_value": 171.2,
-        "since": "2025-12-16"
+        "since": "2025-12-19"
       },
       {
         "ref": "125611243",
@@ -1816,94 +1912,302 @@
         "since": "2025-10-19"
       },
       {
-        "ref": "133071162",
-        "name": "Hannah Hultberg",
+        "ref": "146456658",
+        "name": "Sarah Elmahdy",
+        "visits_30d": 0,
+        "visits_60d": 1,
+        "membership_value": 53.5,
+        "since": "2026-05-14"
+      },
+      {
+        "ref": "123629871",
+        "name": "Stephanie Sims",
         "visits_30d": 0,
         "visits_60d": 0,
+        "membership_value": 188.32,
+        "since": "2025-09-24"
+      },
+      {
+        "ref": "126730179",
+        "name": "Lindsey Runyon",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 240.75,
+        "since": "2025-11-04"
+      },
+      {
+        "ref": "136346990",
+        "name": "Lindsay Weiser",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 160.5,
+        "since": "2026-02-10"
+      },
+      {
+        "ref": "131683319",
+        "name": "Brittney Bogantz",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 212.44,
+        "since": "2025-12-29"
+      },
+      {
+        "ref": "136449366",
+        "name": "Allison Cortelezzi",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 160.5,
+        "since": "2026-02-12"
+      },
+      {
+        "ref": "135813900",
+        "name": "Almu Vallejo",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 256.8,
+        "since": "2026-02-05"
+      },
+      {
+        "ref": "130761456",
+        "name": "Hannah Lyons",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 205.44,
+        "since": "2025-12-21"
+      },
+      {
+        "ref": "147704800",
+        "name": "Wei Zhang",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 80.25,
+        "since": "2026-05-24"
+      },
+      {
+        "ref": "140563165",
+        "name": "Craig McCoy",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 128.4,
+        "since": "2026-03-18"
+      },
+      {
+        "ref": "135014517",
+        "name": "Michael Della Flora",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 239.68,
+        "since": "2026-01-27"
+      },
+      {
+        "ref": "126121537",
+        "name": "Julie Mohr",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 308.0,
+        "since": "2025-10-26"
+      },
+      {
+        "ref": "133367931",
+        "name": "Kelsey Krueger",
+        "visits_30d": 0,
+        "visits_60d": 1,
         "membership_value": 149.8,
-        "since": "2026-01-07"
+        "since": "2026-01-10"
+      },
+      {
+        "ref": "123624935",
+        "name": "Anastasia Shyshlo",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 188.32,
+        "since": "2025-09-24"
+      },
+      {
+        "ref": "129972558",
+        "name": "Courtney Mistretta",
+        "visits_30d": 0,
+        "visits_60d": 1,
+        "membership_value": 171.2,
+        "since": "2025-12-12"
+      },
+      {
+        "ref": "123518286",
+        "name": "Aicia Brush",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 188.32,
+        "since": "2025-09-22"
+      },
+      {
+        "ref": "136629074",
+        "name": "Saleh Alfawzan",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 164.0,
+        "since": "2026-02-14"
+      },
+      {
+        "ref": "124165982",
+        "name": "Elise Alabbas",
+        "visits_30d": 0,
+        "visits_60d": 1,
+        "membership_value": 188.32,
+        "since": "2025-10-02"
+      },
+      {
+        "ref": "138243172",
+        "name": "Taylor Henson",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 80.25,
+        "since": "2026-02-27"
+      },
+      {
+        "ref": "124735314",
+        "name": "Paige Cabanas",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 171.2,
+        "since": "2025-10-10"
+      },
+      {
+        "ref": "124436890",
+        "name": "Kelly Ellis",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 171.2,
+        "since": "2025-10-05"
+      },
+      {
+        "ref": "152030134",
+        "name": "Tiffany Nordaby",
+        "visits_30d": 0,
+        "visits_60d": 1,
+        "membership_value": 42.8,
+        "since": "2026-06-29"
+      },
+      {
+        "ref": "129364322",
+        "name": "Katelyne Allen",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 171.2,
+        "since": "2025-12-03"
+      },
+      {
+        "ref": "138783719",
+        "name": "Laura Wilson",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 214.0,
+        "since": "2026-03-03"
+      },
+      {
+        "ref": "125725306",
+        "name": "Valerie Scott",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 171.2,
+        "since": "2025-10-20"
+      },
+      {
+        "ref": "129888570",
+        "name": "Matthew Guerrieri",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 273.92,
+        "since": "2025-12-10"
+      },
+      {
+        "ref": "124995605",
+        "name": "Rohini Chawla",
+        "visits_30d": 0,
+        "visits_60d": 0,
+        "membership_value": 267.5,
+        "since": "2025-10-12"
       }
     ],
     "top_users_30d": [
       {
-        "ref": "134712090",
-        "name": "Philip Verdes",
-        "visits_30d": 1,
-        "visits_60d": 1,
-        "membership_value": 153.3,
-        "since": "2026-01-24"
-      },
-      {
-        "ref": "131846595",
-        "name": "Michael Kula",
-        "visits_30d": 1,
-        "visits_60d": 1,
-        "membership_value": 273.92,
-        "since": "2025-12-30"
-      },
-      {
-        "ref": "145071910",
-        "name": "Kara Freeman",
-        "visits_30d": 1,
-        "visits_60d": 1,
-        "membership_value": 107.0,
-        "since": "2026-04-27"
-      },
-      {
-        "ref": "124215213",
-        "name": "Ashlynn Dafler",
+        "ref": "123554995",
+        "name": "Kendra Bruce",
         "visits_30d": 1,
         "visits_60d": 1,
         "membership_value": 188.32,
-        "since": "2025-10-03"
+        "since": "2025-09-24"
       },
       {
-        "ref": "125040767",
-        "name": "Jennifer Fields",
-        "visits_30d": 1,
-        "visits_60d": 1,
-        "membership_value": 171.2,
-        "since": "2025-10-12"
-      },
-      {
-        "ref": "127924034",
-        "name": "Alyana Neal",
-        "visits_30d": 1,
-        "visits_60d": 1,
-        "membership_value": 308.16,
-        "since": "2025-11-17"
-      },
-      {
-        "ref": "123820006",
-        "name": "Katherine Laucher",
-        "visits_30d": 1,
-        "visits_60d": 1,
-        "membership_value": 188.32,
-        "since": "2025-09-27"
-      },
-      {
-        "ref": "131862560",
-        "name": "Marie Perez",
-        "visits_30d": 1,
-        "visits_60d": 1,
-        "membership_value": 239.68,
-        "since": "2025-12-30"
-      },
-      {
-        "ref": "124577246",
-        "name": "Sierra Romero",
-        "visits_30d": 1,
-        "visits_60d": 1,
-        "membership_value": 171.2,
-        "since": "2025-10-07"
-      },
-      {
-        "ref": "153109243",
-        "name": "Hannah Huffman",
+        "ref": "154568160",
+        "name": "Mary Fox",
         "visits_30d": 1,
         "visits_60d": 1,
         "membership_value": 0.0,
-        "since": "2026-07-07"
+        "since": "2026-07-17"
+      },
+      {
+        "ref": "149495278",
+        "name": "Katie Eesley",
+        "visits_30d": 1,
+        "visits_60d": 1,
+        "membership_value": 85.6,
+        "since": "2026-06-09"
+      },
+      {
+        "ref": "128677535",
+        "name": "Jo Knoppe",
+        "visits_30d": 1,
+        "visits_60d": 1,
+        "membership_value": 192.6,
+        "since": "2025-11-26"
+      },
+      {
+        "ref": "125735052",
+        "name": "Brittany Kopelcheck",
+        "visits_30d": 1,
+        "visits_60d": 1,
+        "membership_value": 267.5,
+        "since": "2025-10-20"
+      },
+      {
+        "ref": "127812346",
+        "name": "Jason Driggs",
+        "visits_30d": 1,
+        "visits_60d": 1,
+        "membership_value": 192.6,
+        "since": "2025-11-16"
+      },
+      {
+        "ref": "147729168",
+        "name": "Katrina Eckard",
+        "visits_30d": 1,
+        "visits_60d": 1,
+        "membership_value": 128.4,
+        "since": "2026-05-24"
+      },
+      {
+        "ref": "126902536",
+        "name": "Nicole Tanis",
+        "visits_30d": 1,
+        "visits_60d": 1,
+        "membership_value": 192.6,
+        "since": "2025-11-07"
+      },
+      {
+        "ref": "133257015",
+        "name": "Brooke Wylie",
+        "visits_30d": 1,
+        "visits_60d": 1,
+        "membership_value": 149.8,
+        "since": "2026-01-10"
+      },
+      {
+        "ref": "126779918",
+        "name": "Shannon Tyson",
+        "visits_30d": 1,
+        "visits_60d": 1,
+        "membership_value": 240.75,
+        "since": "2025-11-05"
       }
     ],
     "visits_daily": [
@@ -2013,7 +2317,7 @@
       },
       {
         "date": "2026-07-31",
-        "count": 7
+        "count": 6
       },
       {
         "date": "2026-08-01",
@@ -2021,28 +2325,28 @@
       },
       {
         "date": "2026-08-02",
-        "count": 8
+        "count": 7
       },
       {
         "date": "2026-08-03",
-        "count": 2
+        "count": 5
       }
     ]
   },
   "customers": {
-    "modified_30d": 4490,
-    "new_this_month": 137,
-    "marketing_optin": 1298
+    "modified_30d": 4500,
+    "new_this_month": 146,
+    "marketing_optin": 1299
   },
   "discounts": {
-    "30d_total_value": 5761.6,
-    "30d_application_count": 263,
+    "30d_total_value": 5815.6,
+    "30d_application_count": 266,
     "catalog_count": 106
   },
   "channel_mix_30d": {
     "Consumer": 8801.78,
     "VenueManager": 1105.31,
-    "Doorlist": 11859.66
+    "Doorlist": 12000.19
   },
   "alerts": [],
   "gx": {
